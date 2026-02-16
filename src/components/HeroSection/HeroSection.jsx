@@ -7,8 +7,20 @@ export default function HeroSection() {
     <section className={styles.hero}>
       <div className={`container ${styles.heroContainer}`}>
         <div className={styles.heroContent}>
-          <h1>Free Online School Management Software</h1>
-          <p>Manage your school, college, or any educational institution seamlessly with eSkooly — completely free for life</p>
+           <span className={styles.small_font}>Free</span> 
+           <span className={styles.bold_fonts}>Online</span>
+           <span className={styles.small_font}>School</span> <br />
+           <span className={styles.bold_fonts}>Management</span><br />
+           <span className={styles.small_font}>Software</span> <br />
+            
+            <div className={styles.p}>
+
+           <span>You can now manage your school, college, or any</span><br />
+           <span>educational institution seamlessly with eSkooly — completely</span><br />
+           <span>free for life, with no limitations.</span><br />
+
+            </div>
+          
           <div className={styles.heroActions}>
             <button className="btn-primary btn-large">Get Started, It's Free</button>
             <button className="btn-play">▶ Play Demo</button>

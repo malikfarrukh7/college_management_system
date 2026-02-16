@@ -44,3 +44,33 @@
   display: flex;
   gap: 15px;
 }
+.btn-login {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background: var(--primary);
+  color: white;
+}
+
+btn-signup {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-signup:hover {
+  background: var(--primary-dark);
+}
