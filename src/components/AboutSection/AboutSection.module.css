@@ -1,0 +1,44 @@
+.about {
+  padding: 80px 0;
+  background: white;
+}
+
+.aboutTitle {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-dark);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.aboutItem {
+  text-align: center;
+}
+
+.aboutIcon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.aboutItem h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.aboutItem p {
+  color: var(--text-gray);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+}

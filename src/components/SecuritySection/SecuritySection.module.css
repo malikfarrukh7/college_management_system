@@ -1,0 +1,49 @@
+.security {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: white;
+}
+
+.securityTitle {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.securityContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.securityText p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  color: #e5e7eb;
+}
+
+.securityList {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.securityList li {
+  padding: 12px 0;
+  font-size: 15px;
+  color: #d1d5db;
+}
+
+.securityImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .securityContent {
+    grid-template-columns: 1fr;
+  }
+}

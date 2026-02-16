@@ -1,0 +1,38 @@
+import React from 'react'
+import styles from './HeroSection.module.css'
+import heroBanner from '../../assets/images/hero-banner4.webp'
+
+export default function HeroSection() {
+  return (
+    <section className={styles.hero}>
+      <div className={`container ${styles.heroContainer}`}>
+        <div className={styles.heroContent}>
+          <h1>Free Online School Management Software</h1>
+          <p>Manage your school, college, or any educational institution seamlessly with eSkooly — completely free for life</p>
+          <div className={styles.heroActions}>
+            <button className="btn-primary btn-large">Get Started, It's Free</button>
+            <button className="btn-play">▶ Play Demo</button>
+          </div>
+          <div className={styles.heroStats}>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>125,000+</div>
+              <div className={styles.statLabel}>Trusted Schools</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>4.6</div>
+              <div className={styles.statLabel}>Rated on 9300+ Reviews</div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.heroImage}>
+         <img
+  src={heroBanner}
+  alt="Dashboard Preview"
+  className={styles.heroBannerImage}
+/>
+
+        </div>
+      </div>
+    </section>
+  )
+}
