@@ -22,7 +22,7 @@ export default function AboutSection() {
 
   return (
     <section className={styles.about}>
-      <div className="container">
+      <div className={styles.container}>
         <h2 className={styles.aboutTitle}>eSkooly is a revolution in education management</h2>
         <div className={styles.aboutGrid}>
           {aboutItems.map((item, idx) => (

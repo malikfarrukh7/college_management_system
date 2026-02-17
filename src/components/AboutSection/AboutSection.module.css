@@ -3,6 +3,12 @@
   background: white;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .aboutTitle {
   font-size: 36px;
   text-align: center;

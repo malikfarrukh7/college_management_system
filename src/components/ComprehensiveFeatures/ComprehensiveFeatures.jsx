@@ -19,7 +19,7 @@ export default function ComprehensiveFeatures() {
 
   return (
     <section className={styles.comprehensiveFeatures} id="features">
-      <div className="container">
+      <div className={styles.container}>
         <h2 className={styles.featuresTitle}>Comprehensive Features for Every Need</h2>
         <div className={styles.featuresShowcase}>
           {features.map((feature, idx) => (

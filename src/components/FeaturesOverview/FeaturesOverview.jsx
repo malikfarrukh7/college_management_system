@@ -31,7 +31,7 @@ export default function FeaturesOverview() {
 
   return (
     <section className={styles.featuresOverview}>
-      <div className="container">
+      <div className={styles.container}>
         <h2 className={styles.overviewTitle}>Everything your institute needs—delivered free, fast, and future-proof</h2>
         <div className={styles.featuresGrid}>
           {features.map((feature, idx) => (

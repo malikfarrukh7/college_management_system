@@ -2,7 +2,7 @@
      background: 
     url('../../assets/images/bg-lines.webp') no-repeat center center / cover, /* Image layer */
     #282175; /* Solid blue color layer */
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 100px 0px;
    margin: 0;
    width: 100%;
@@ -19,9 +19,9 @@
 }
 
 .small_font {
-  font-size: 48px;
-  font-weight: 200;
-  line-height: 1.2;
+  font-size: 69px;
+  font-weight: 300;
+  line-height: 72px;
   margin-bottom: 20px;
   color: #ffffff; /* white text */
   background: none; /* remove gradient */
@@ -31,9 +31,9 @@
 }
 
 .bold_fonts{
-    font-size: 48px;
-  font-weight: 700;
-  line-height: 1.2;
+    font-size: 78px;
+  font-weight: 600;
+  line-height: 72px;
   margin-bottom: 20px;
   color: #ffffff; /* white text */
   background: none; /* remove gradient */
@@ -44,23 +44,18 @@
 
 
 
-.heroContent h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  color: #ffffff; /* white text */
-  background: none; /* remove gradient */
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-  background-clip: initial;
+.heroContent  {
+padding-top: 70px;
 }
 
 .p {
-  font-size: 25px;
-  line-height: 1.1;
-  color: var(--text-gray);
+  font-family: Satoshi, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: white;
   margin-bottom: 30px;
+  padding-top: 35px;
 }
 
 .heroActions {
@@ -100,8 +95,12 @@
   overflow: visible;
 
 }
+.btnLarge {
+  padding: 14px 32px;
+  font-size: 16px;
+}
 
-.btn-primary {
+.btnPrimary {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
   border: none;
@@ -113,14 +112,9 @@
   transition: all 0.3s;
 }
 
-.btn-primary:hover {
+.btnPrimary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
-}
-
-.btn-large {
-  padding: 14px 32px;
-  font-size: 16px;
 }
 
 
@@ -147,7 +141,7 @@
 }
 
 
-.btn-play {
+.btnPlay {
   background: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
@@ -159,7 +153,7 @@
   font-size: 14px;
 }
 
-.btn-play:hover {
+.btnPlay:hover {
   background: var(--primary);
   color: white;
 }

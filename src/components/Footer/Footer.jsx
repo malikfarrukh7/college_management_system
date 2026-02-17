@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.footerGrid}>
           <div className={styles.footerSection}>
             <h3>Information</h3>

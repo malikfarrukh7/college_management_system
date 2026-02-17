@@ -44,6 +44,9 @@
   display: flex;
   gap: 15px;
 }
+
+
+
 .btn-login {
   background: transparent;
   color: var(--primary);
@@ -60,7 +63,7 @@
   color: white;
 }
 
-btn-signup {
+.btn-signup {
   background: var(--primary);
   color: white;
   border: none;

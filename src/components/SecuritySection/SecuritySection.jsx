@@ -4,7 +4,7 @@ import styles from './SecuritySection.module.css'
 export default function SecuritySection() {
   return (
     <section className={styles.security}>
-      <div className="container">
+      <div className={styles.container}>
         <h2 className={styles.securityTitle}>Why eSkooly Stands Out</h2>
         <div className={styles.securityContent}>
           <div className={styles.securityText}>

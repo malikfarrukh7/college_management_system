@@ -13,8 +13,8 @@ export default function Navbar() {
           <li><a href="#support">Support</a></li>
         </ul>
         <div className={styles.navActions}>
-          <button className="btn-login">Login</button>
-          <button className="btn-signup">Sign Up</button>
+          <button className={styles['btn-login']}>Login</button>
+          <button className={styles['btn-signup']}>Sign Up</button>
         </div>
       </div>
     </nav>

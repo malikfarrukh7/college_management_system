@@ -25,7 +25,7 @@ export default function Testimonials() {
 
   return (
     <section className={styles.testimonials}>
-      <div className="container">
+      <div className={styles.container}>
         <h2 className={styles.testimonialsTitle}>What Our Clients Say About Us</h2>
         <div className={styles.testimonialsGrid}>
           {testimonials.map((testimonial, idx) => (

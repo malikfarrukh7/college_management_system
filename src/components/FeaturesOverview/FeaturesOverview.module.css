@@ -3,6 +3,12 @@
   background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .overviewTitle {
   font-size: 36px;
   text-align: center;
