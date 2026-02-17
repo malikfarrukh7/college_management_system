@@ -1,7 +1,7 @@
 .hero {
      background: 
     url('../../assets/images/bg-lines.webp') no-repeat center center / cover, /* Image layer */
-    #282175; /* Solid blue color layer */
+    #43abff; /* Solid blue color layer */
   min-height: 100vh;
   padding: 100px 0px;
    margin: 0;
@@ -13,7 +13,7 @@
 .heroContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 0px;
   align-items: center;
 
 }
@@ -95,6 +95,13 @@ padding-top: 70px;
   overflow: visible;
 
 }
+
+.heroImage img {
+  width: 100%;
+  max-width: 2000px; /* control max size */
+  height: auto;
+}
+
 .btnLarge {
   padding: 14px 32px;
   font-size: 16px;
