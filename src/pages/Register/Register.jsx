@@ -58,7 +58,7 @@ export default function Register() {
           className="register-btn"
           onClick={handleSignup}
           disabled={loading}
-          > {loading ? "Please wait..." : "Register"} </button>
+          > {loading ? "Please wait..." : "Sign Up"} </button>
         </form>
         <p className="login-link">
           Already have an account? <button onClick={() => navigate('/login')} className="link-btn">Login here</button>
