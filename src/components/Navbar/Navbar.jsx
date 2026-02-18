@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './Navbar.module.css'
+import { useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
+  const navigate = useNavigate()
   return (
     <nav className={styles.navbar}>
       <div className={`container ${styles.navbarContainer}`}>
@@ -13,8 +15,8 @@ export default function Navbar() {
           <li><a href="#support">Support</a></li>
         </ul>
         <div className={styles.navActions}>
-          <button className={styles['btn-login']}>Login</button>
-          <button className={styles['btn-signup']}>Sign Up</button>
+          <button onClick={() => navigate('/login')} className={styles['btn-login']}>Login</button>
+          <button onClick={() => navigate('/register')} className={styles['btn-signup']}>Sign Up</button>
         </div>
       </div>
     </nav>
