@@ -67,7 +67,7 @@ export default function Login() {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}  placeholder="Enter your password" required />
           </div>
-          <button type="submit" className="login-btn">Login</button>
+          <button type="submit" className="login-btn" disabled={loading}>{loading ? 'Logging in...' : 'Login'}</button>
         </form>
         <p className="signup-link">
           Don't have an account? <button onClick={() => navigate('/register')} className="link-btn">Sign UP</button>

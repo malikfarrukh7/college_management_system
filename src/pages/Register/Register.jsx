@@ -58,7 +58,7 @@ export default function Register() {
         navigate('/login')
       }, 2000)
     } catch (err) {
-      setError('An unexpected error occurred')
+      setError(err.message || 'An unexpected error occurred')
       setLoading(false)
     }
   }
