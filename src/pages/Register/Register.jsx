@@ -1,4 +1,4 @@
-import './Register.module.css'
+import styles from './Register.module.css'
 import { useNavigate } from 'react-router-dom'
 import React, { useState } from 'react'
 import { supabase } from '../../lib/supabaseClient'
@@ -64,17 +64,18 @@ export default function Register() {
   }
 
   return (
-    <div className="register-container">
-      <div className="register-card">
+    <div className={styles['register_container']}>
+      <div className={styles['register_card']}>
         <h1>Register</h1>
 
-        {error && <p className="error-message">{error}</p>}
-        {success && <p className="success-message">{success}</p>}
+        {error && <p className={styles['error_message']}>{error}</p>}
+        {success && <p className={styles['success_message']}>{success}</p>}
 
         <form onSubmit={handleSignup}>
-          <div className="form-group">
+          <div className={styles['form-group']}>
             <label>Email</label>
             <input
+              className={styles.input}
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -82,9 +83,10 @@ export default function Register() {
             />
           </div>
 
-          <div className="form-group">
+          <div className={styles['form-group']}>
             <label>Password</label>
             <input
+              className={styles.input}
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -92,9 +94,10 @@ export default function Register() {
             />
           </div>
 
-          <div className="form-group">
+          <div className={styles['form-group']}>
             <label>Confirm Password</label>
             <input
+              className={styles.input}
               type="password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
@@ -102,14 +105,14 @@ export default function Register() {
             />
           </div>
 
-          <button type="submit" disabled={loading}>
+          <button type="submit" className={styles['register_btn']} disabled={loading}>
             {loading ? 'Please wait...' : 'Sign Up'}
           </button>
         </form>
 
-        <p className="login-link">
+        <p className={styles['login_link']}>
           Already have an account?{' '}
-          <button onClick={() => navigate('/login')} className="link-btn">
+          <button type="button" onClick={() => navigate('/login')} className={styles['link_btn']}>
             Login here
           </button>
         </p>

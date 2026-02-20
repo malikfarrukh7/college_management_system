@@ -55,22 +55,21 @@ export default function Login() {
     <div className={styles.login_container}>
       <div className={styles.login_box}>
         <h1>Login</h1>
-        {error && <p className="error-message">{error}</p>}
+        {error && <p className={styles['error-message']}>{error}</p>}
 
         <form onSubmit={handleSubmit}>
-            
-          <div className="form-group">
+          <div className={styles['form-group']}>
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" required />
+            <input className={styles.input} type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" required />
           </div>
-          <div className="form-group">
+          <div className={styles['form-group']}>
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}  placeholder="Enter your password" required />
+            <input className={styles.input} type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}  placeholder="Enter your password" required />
           </div>
-          <button type="submit" className="login-btn" disabled={loading}>{loading ? 'Logging in...' : 'Login'}</button>
+          <button type="submit" className={styles['login-btn']} disabled={loading}>{loading ? 'Logging in...' : 'Login'}</button>
         </form>
-        <p className="signup-link">
-          Don't have an account? <button onClick={() => navigate('/register')} className="link-btn">Sign UP</button>
+        <p className={styles['signup-link']}>
+          Don't have an account? <button type="button" onClick={() => navigate('/register')} className={styles['link-btn']}>Sign UP</button>
         </p>
       </div>
     </div>

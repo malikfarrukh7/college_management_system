@@ -16,7 +16,7 @@
   max-width: 400px;
 }
 
-.login-card h1 {
+.login_box h1 {
   text-align: center;
   color: #333;
   margin-bottom: 30px;
@@ -46,6 +46,14 @@
 .form-group input:focus {
   outline: none;
   border-color: #667eea;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .login-btn {
