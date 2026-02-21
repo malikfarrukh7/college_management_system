@@ -2,7 +2,11 @@ import React from 'react'
 import styles from './HeroSection.module.css'
 import heroBanner from '../../assets/images/hero-banner4.webp'
 
-export default function HeroSection() {
+const HeroSection = () => {
+
+
+
+
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.heroContainer}`}>
@@ -50,3 +54,4 @@ export default function HeroSection() {
     </section>
   )
 }
+export default HeroSection
